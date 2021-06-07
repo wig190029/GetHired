@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--built in Bootstrap code-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Job Portal</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+	<!--Cards slide-->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<link href="job.css" rel="stylesheet">
+</head>
+
+<!--Navigation-->
+<body>
+	<!--navbar-->
+
+<header>
+<section id="header">
+	<nav class="navbar navbar-expand-md navbar-light shadow-sm">
+		<div class="container">
+			<!--top left Logo-->
+			<a class="navbar-brand" href="index.html"><img src="img/joblogon.png"></a>
+			<!--navigation button-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!--inside the navigation button-->
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto"> <!--ml-auto pushes navigation to righthand side-->
+					<li class="nav-item" active>
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class=" nav-link" href="jobs.html">Jobs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="companies.html">Company</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="login.html">Login</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="FAQs.html">FAQ</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<!--End Navigation-->
+
+<!--Background Header-->
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-md-5 col-sm-12">
+				<h1>Find your dream jobs through <span>GetHired</span> today</h1>
+
+				<div class="search-job text-left">
+					<input type="text" id="jobInput" onkeyup="jobSearch()" class="form-control" placeholder="Search for job...">
+
+					<!-- <ul id="jobAvailable">
+						<li><a href="#">Cashier</a></li>
+						<li><a href="#">Clerk</a></li>
+
+						<li><a href="#">Data Analyst</a></li>
+						<li><a href="#">Designer</a></li>
+						<li><a href="#">Developer</a></li>
+
+						<li><a href="#">Graphic Designer</a></li>
+
+						<li><a href="#">Information Security Analyst</a></li>
+						<li><a href="#">Interior Designer</a></li>
+						<li><a href="#">Internship</a></li>
+
+						<li><a href="#">Nurse</a></li>
+
+						<li><a href="#">Office Assistant</a></li>
+
+						<li><a href="#">Personal Trainer</a></li>
+						<li><a href="#">Pharmacist</a></li>
+						<li><a href="#">Program Manager</a></li>
+						<li><a href="#">Programmer</a></li>
+						<li><a href="#">Project Manager</a></li>
+
+						<li><a href="#">Receptionist</a></li>
+
+						<li><a href="#">Secretary</a></li>
+
+						<li><a href="#">UI/UX Designer</a></li>
+
+						<li><a href="#">Web Designer</a></li>
+						<li><a href="#">Web Developer</a></li>
+					</ul> -->
+
+					<button type="button" class="btn btn-primary">Search</button>
+				</div>
+			</div>
+
+			<div class="col-md-7 col-sm-12 h-25">
+				<img src="img/job-bg.png">
+			</div>
+
+		</div>
+	</div>
+</section>
+</header>
+<!--Background Header-->
+
+
+<!--Top recruiters-->
+<section id="recruiters">
+	<div class="container text-center">
+		<h3>TOP RECRUITERS</h3>
+
+		<div>
+		<img src="img/intel.png">
+		<img src="img/ey.png">
+		<img src="img/swift.png">
+		<img src="img/petronas.png">
+		<img src="img/airasia.png">
+		</div>
+	</div>
+</section>
+<!--Top recruiter-->
+
+<!--Job Postings-->
+
+<section id="jobs">
+
+	<div class="container">
+		<h5>RECENT JOB POSTINGS</h5>
+
+		<div class="company-details" >
+			<div class="job-update">
+				<h4><b>UI/UX Designer</b></h4>
+				<p>Air Asia</p>
+				<i class="fas fa-dollar-sign"></i></a><span> RM2500</span><br>
+				<i class="fas fa-map-marker-alt"></i></a><span> KLIA, Kuala Lumpur</span><br>
+			</div>
+			<div class="apply-btn">
+				<button type="button" class="btn btn-primary" onclick="location.href = 'applypage.php' ">Apply</button>
+			</div>
+		</div>
+
+		<div class="company-details">
+			<div class="job-update">
+				<h4><b>Full-stack Developer</b></h4>
+				<p>EY</p>
+				<i class="fas fa-dollar-sign"></i></a><span> RM5000</span><br>
+				<i class="fas fa-map-marker-alt"></i></a><span> Kuala Lumpur</span><br>
+			</div>
+			<div class="apply-btn">
+				<button type="button" class="btn btn-primary" onclick="location.href = 'applypage.php' ">Apply</button>
+			</div>
+		</div>
+
+		<div class="company-details">
+			<div class="job-update">
+				<h4><b>Part-time Waiter</b></h4>
+				<p>Coffee Time</p>
+				<i class="fas fa-dollar-sign"></i></a><span> RM1200</span><br>
+				<i class="fas fa-map-marker-alt"></i></a><span> Putrajaya</span><br>
+			</div>
+			<div class="apply-btn">
+				<button type="button" class="btn btn-primary" onclick="location.href = 'applypage.php' ">Apply</button>
+			</div>
+		</div>
+
+		<div class="company-details">
+			<div class="job-update">
+				<h4><b>Internship Program</b></h4>
+				<p>Shopee</p>
+				<i class="fas fa-dollar-sign"></i></a><span> RM2000</span><br>
+				<i class="fas fa-map-marker-alt"></i></a><span> Kuala Lumpur</span><br>
+			</div>
+			<div class="apply-btn">
+				<button type="button" class="btn btn-primary" onclick="location.href = 'applypage.php' ">Apply</button>
+			</div>
+		</div>
+
+		<div class="company-details">
+			<div class="job-update">
+				<h4><b>Data Analyst</b></h4>
+				<p>Maxis</p>
+				<i class="fas fa-dollar-sign"></i></a><span> RM5000</span><br>
+				<i class="fas fa-map-marker-alt"></i></a><span> Kajang</span><br>
+			</div>
+			<div class="apply-btn">
+				<button type="button" class="btn btn-primary" onclick="location.href = 'applypage.php' ">Apply</button>
+			</div>
+		</div>
+
+		<ul class="page-link text-center">
+			<li class="left-arrow">&#8592;</li>
+			<li class="active">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li class="right-arrow">&#8594;</li>
+		</ul>
+
+	</div>
+
+</section>
+<!--End Job Postings-->
+
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+<!-- Footer-->
+<footer class="footer">
+	<div class="container-fluid padding">
+    <div class="row">
+      <div class="col-lg-6 h-100 text-lg-start my-auto">
+	      <ul class="foot mb-2">
+	        <li class="foot-item"><a href="#">Privacy Policy</a></li>
+	        <li class="foot-item"><a href="#">Company Profile</a></li>
+	        <li class="foot-item"><a href="#">Terms of Use</a></li>
+	      </ul>
+	  <p class="text-muted small mb-4 mb-lg-0">&copy; GetHired 2021. All Rights Reserved.</p>
+    </div>
+	    <div class="col-lg-6 h-100 text-center text-lg-end social padding">
+	      <a href="#"><i class="fab fa-facebook"></i></a>
+	      <a href="#"><i class="fab fa-twitter"></i></a>
+	     	<a href="#"><i class="fab fa-google-plus-g"></i></a>
+	      <a href="#"><i class="fab fa-instagram"></i></a>
+	     	<a href="#"><i class="fab fa-youtube"></i></a>
+	    </div>
+    </div>
+	</div>
+</footer>
+
+<!-- js -->
+<script src="login.js"></script>
+
+</body>
+</html>
